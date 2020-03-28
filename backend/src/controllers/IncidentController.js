@@ -28,7 +28,7 @@ module.exports = {
     const { title, description, value } = request.body;
     const ong_id = request.headers.authorization;
 
-    // valiDação
+    // validação
     if (ong_id === "[object Object]") {
       return response.status(401).json({ error: "Operation not permitted." });
     }
