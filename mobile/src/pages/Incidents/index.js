@@ -31,10 +31,6 @@ export default function Incidents() {
 
     setLoading(true);
 
-    // const response = await api.get("incidents", {
-    //   param: { page }
-    // });
-
     const response = await api.get(`incidents?page=${page}`);
 
     // anexar dois vetores
